@@ -1,0 +1,339 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    text-decoration: none; 
+    background: none; 
+    border: none; 
+} 
+ 
+body { 
+    font-family: "Roboto", sans-serif; 
+    background: #4f3963; 
+    background: linear-gradient(0deg, #4f3963 0%, #764469 60%, rgba(94,62,#5e3e6644,33,66,1) 100%); 
+} 
+ 
+header { 
+    width: 1520px; 
+    margin: 75px auto; 
+ 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+ 
+    position: relative; 
+    z-index: 10; 
+} 
+ 
+header button { 
+    font-size: 18px; 
+    color: white; 
+    cursor: pointer; 
+    transition: all .1s linear; 
+} 
+ 
+header button:nth-of-type(2) { 
+    border: 2px solid white; 
+    border-radius: 5px; 
+    padding: 10px 38px; 
+} 
+ 
+header button:hover { 
+    color: #FFD9D9; 
+    border-color: #FFD9D9; 
+} 
+ 
+header button:active { 
+    color: white; 
+    border-color: white; 
+} 
+ 
+nav { 
+    display: flex; 
+    gap: 20px; 
+} 
+ 
+.banner { 
+    background: rgb(212,91,120); 
+    background: linear-gradient(200deg, rgba(212,91,120,1) 0%, rgba(75,56,98,1) 80%); 
+    color: white; 
+ 
+    width: 100%; 
+    height: 100vh; 
+ 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+ 
+    position: relative; 
+    margin-top: -267px; 
+    overflow: hidden; 
+} 
+ 
+.banner img { 
+    width: 1305px; 
+    height: 565px; 
+} 
+ 
+.banner h1 { 
+    font-size: 64px; 
+    line-height: 75px; 
+    margin-top: 14px; 
+} 
+ 
+.banner p { 
+    text-align: center; 
+    font-weight: 300; 
+    font-size: 24px; 
+    line-height: 36px; 
+    margin-top: 37px; 
+    color: #F2F2F2; 
+} 
+.banner button { 
+    background-color: #D75C78; 
+    padding: 17px 55px; 
+    font-size: 36px; 
+    text-transform: uppercase; 
+    color: white; 
+    margin-top: 20px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    filter: drop-shadow(0 17px 32px 0 #00000040); 
+ 
+    position: relative; 
+    z-index: 10; 
+} 
+ 
+.banner button:hover { 
+    background-color: #DF4C6E; 
+} 
+ 
+.banner button:active { 
+    background-color: #C83E5D; 
+} 
+ 
+.head_decore_left { 
+    position: absolute; 
+    left: -400px; 
+    top: 400px; 
+} 
+ 
+.head_decore_right { 
+    position: absolute; 
+    right: -400px; 
+    top: 800px; 
+} 
+ 
+.start { 
+    display: flex; 
+    gap: 44px; 
+ 
+    width: max-content; 
+    margin: auto; 
+} 
+ 
+.start_left, .start_right { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 160px; 
+} 
+ 
+.start_left { 
+    margin-top: 460px; 
+} 
+ 
+.start_right::before { 
+    content: ''; 
+    background-image: url(../style/img/aqalangist.svg); 
+    position: relative;
+    left: 400px;
+    width: 577px; 
+    height: 449px; 
+    filter: drop-shadow(10px 59px 77px #00000040); 
+} 
+ 
+.start_left::after { 
+    content: ''; 
+    background-image: url(../style/img/aqualangist1.svg); 
+
+    width: 474px; 
+    height: 325px; 
+} 
+ 
+.start_item { 
+    width: 738px; 
+    height: 308px; 
+ 
+    padding: 87px 102px 82px 125px; 
+ 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    gap: 25px; 
+ 
+    background-color: #523A64; 
+    color: #F2F2F2; 
+ 
+    box-shadow: 6px 10px 45px -9px #00000040; 
+ 
+}
+
+.one{
+    width:121px ;
+    height: 90px;
+    position: relative;
+    top: 640px;
+    left: 635px;
+}
+.two{
+    width:121px ;
+    height: 90px;
+    position: relative;
+    top: 800px;
+    left: 1290px;
+}
+.three{
+    width:121px ;
+    height: 90px;
+    position: relative;
+    top: 1120px;
+    left: 385px;
+}
+.four{
+    width:121px ;
+    height: 90px;
+    position: relative;
+    top: 1250px;
+    left: 1040px;
+}
+.check{
+    position: relative;
+    left: 200px;
+}
+.movie{
+    position: relative;
+    width: 3000px;
+height: 655px;
+
+left: 1px;
+gap: 0px;
+opacity: 0px;
+
+}
+.play{
+    position: relative;
+    bottom: 450px;
+    left: 1250px;
+}
+@media screen and (min-width:1024px) and (max-width:1280px) {
+        header{
+            width: 1024px;
+        }
+}
+
+.free{
+    position: relative;
+    left: 330px;
+    
+}
+.free h1{
+    width: 370px;
+    height: 144px;
+    position: relative;
+    top: 350px;
+    left: 150px;
+    color: white;
+
+}
+.free p{
+    width: 370px;
+    height: 108px;
+    position: relative;
+    top: 390px;
+    left: 150px;
+    color: white;
+
+}
+.free button{
+    position: relative;
+    bottom: 270px;
+    right: 550px;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    background: none; 
+    padding: 10px 20px; 
+    text-align: center; 
+    display: inline-block; 
+
+}
+
+
+.pay{
+    position: relative;
+    left: 1490px;
+    bottom: 1090px;
+}
+.pay h1{
+    width: 370px;
+    height: 144px;
+    position: relative;
+    top: 350px;
+    left: 150px;
+    color: white;
+
+}
+.pay p{
+    width: 370px;
+    height: 108px;
+    position: relative;
+    top: 390px;
+    left: 150px;
+    color: white;
+
+}
+.pay button{
+    position: relative;
+    bottom: 270px;
+    right: 550px;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    background: none; 
+    padding: 10px 20px; 
+    text-align: center; 
+    display: inline-block; 
+
+}
+#IMG{
+    
+    width: 2900px;
+    height: 452px;
+    
+    position: relative;
+    bottom: 1200px ;
+    
+}
+#podlod{
+    position: relative;
+    left: 2200px;
+}
+.sub{
+    position: relative;
+    bottom: 150px;
+    left: 90px;
+}
+
+@keyframes example {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.2);}
+    100% {transform: scale(1);}
+  }
+  
+  .fish {
+    position: relative;
+    bottom: 1200px;
+    left: 300px;
+    animation: example 2s infinite;
+  }
